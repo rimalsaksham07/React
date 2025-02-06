@@ -13,7 +13,7 @@ function customRender(reactElement, mainContainer) {
     if (prop == 'children') continue;
     domElement.setAttribute(prop , reactElement.props[prop])
   }
-  mainContainer.appendChild(domElement)
+  mainContainer.appendChild(dom)
 }
 
 const reactElement = {
