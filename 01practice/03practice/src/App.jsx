@@ -1,11 +1,10 @@
-import { useState, useCallback, useEffect, useRef } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 function App() {
   const [length, setLength] = useState(8);
   const [character, setCharacter] = useState(false);
   const [number, setNumber] = useState(false);
   const [password, setPassword] = useState("");
-  const passwordRef = useRef(null);
 
   const passwordGenerator = useCallback(() => {
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -28,13 +27,6 @@ function App() {
     passwordGenerator();
   }, [length, character, number, passwordGenerator]);
 
-  const copyToClipboard = () => {
-    passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 99); // Select up to 99 characters
-    navigator.clipboard.writeText(password);
-    alert("Password copied to clipboard!");
-  };
-
   return (
     <>
       <div className="flex h-screen items-center justify-center bg-gray-100">
@@ -45,15 +37,11 @@ function App() {
               <input
                 type="text"
                 value={password}
-                ref={passwordRef}
                 readOnly
                 className="border-2 border-black rounded-2xl px-4 py-2 w-64 focus:outline-none focus:border-blue-500"
                 placeholder="Generated Password"
               />
-              <button
-                onClick={copyToClipboard}
-                className="bg-green-500 hover:bg-green-700 text-white rounded-2xl px-4 py-2 transition duration-300"
-              >
+              <button className="bg-green-500 hover:bg-green-700 text-white rounded-2xl px-4 py-2 transition duration-300">
                 Copy
               </button>
             </div>
