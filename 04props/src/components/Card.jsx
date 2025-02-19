@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username ,age , location}) {
+function Card({username ,age , location}) { // destructuring gareko ho yo 
     console.log(username)
     console.log(age)
 
