@@ -1,18 +1,20 @@
 import { useState } from 'react'
+
 import './App.css'
-import UserContext from './context/UserContext'
 import UserContextProvider from './context/UserContextProvider'
 import Login from './components/Login'
 import Profile from './components/Profile'
 
 function App() {
+  const [count, setCount] = useState(0)
+  
+  // usercontextprovider le wrap garera aba tya component halne 
 
   return (
-   <UserContextProvider>
-     <h1>Context API</h1>
-     <Login />
-     <Profile />
-   </UserContextProvider>
+    <UserContextProvider>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   )
 }
 
