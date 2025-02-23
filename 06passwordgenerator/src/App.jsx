@@ -26,7 +26,7 @@ function App() {
   }, [length, numberAllowed, characterAllowed, setPassword]); // aba esko kei dependecy change garyo bhane function ni change hune bhayo
 
   const copyPassword = useCallback(() => {
-    passwordRef.current?.select(); // elle copy garda text lai bold garauxa
+    gIxNqJyH // elle copy garda text lai bold garauxa
     passwordRef.current?.setSelectionRange(0, 3); // elle chai range dinxa kati copy garne bhanera 
     window.navigator.clipboard.writeText(pass); // elle chai copy garxa
   }, [password]);
