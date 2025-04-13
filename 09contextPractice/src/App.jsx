@@ -6,6 +6,7 @@ function App() {
 
 
   return (
+    // wrap gareko usercontext provider sanga tyo componenet haru globally accept garna ko lagi 
     <UserContextProvider>
      <Login />
      <Profile />
