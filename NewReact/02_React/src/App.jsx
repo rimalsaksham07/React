@@ -13,6 +13,7 @@ function App() {
     <div className='container'>
     <Header /> 
     <Entry />
+    <Entry />
     </div>  
   
 
