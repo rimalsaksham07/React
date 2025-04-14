@@ -21,11 +21,12 @@ import "./index.css";
 import App from "./App";
 import { StrictMode } from "react";
 import Intro from "./components/Intro";
+import Footer from "./components/Footer";
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
     <App />
     <Intro />
-    
+    <Footer />
   </StrictMode>
 );
