@@ -12,8 +12,8 @@ function App() {
     <>
     <div className='container'>
     <Header /> 
-    <Entry />
-    <Entry />
+    <Entry name="Mount Fuji" country="Japan" />
+    <Entry name="Taj Mahal" country="India" />
     </div>  
   
 

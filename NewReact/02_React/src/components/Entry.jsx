@@ -1,6 +1,7 @@
 import React from "react";
 
-function Entry() {
+function Entry(props) {
+
   return (
     <div className="entry-container">
       <div className="struct">
@@ -13,10 +14,10 @@ function Entry() {
         />
         <div className="loc">
           <div className="intro">
-            <p>Japan</p>
+            <p>{props.country}</p>
             <a href=""> View on google Map</a>
           </div>
-          <h1>Mount Fuji</h1>
+          <h1>{props.name}</h1>
           <h5>12 Jan 2021 - 24 Jan 2021</h5>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
