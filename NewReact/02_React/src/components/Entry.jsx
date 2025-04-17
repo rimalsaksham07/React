@@ -5,7 +5,7 @@ function Entry(props) {
     <div className="entry-container">
       <div className="struct">
         <img
-          src="src/assets/fuji.avif"
+          src= {props.img.src}
           height={200}
           width={200}
         />
