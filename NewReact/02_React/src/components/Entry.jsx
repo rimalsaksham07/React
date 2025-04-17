@@ -1,14 +1,11 @@
 import React from "react";
 
 function Entry(props) {
-
   return (
     <div className="entry-container">
       <div className="struct">
         <img
           src="src/assets/fuji.avif"
-          alt=""
-          srcset=""
           height={200}
           width={200}
         />
@@ -29,5 +26,45 @@ function Entry(props) {
     </div>
   );
 }
+// const nums = [1, 2, 3, 4, 5];
+
+// const squares = nums.map((x) => x ** 2);
+// console.log(squares)
+
+// const names = ['alice' , 'bob' , 'charlie' , 'danielle']
+// const capital = names.map(
+//   (name) => name[0].toUpperCase() + name.slice(1)
+// )
+// console.log(capital);
+
+// const pokemon = ["Bulbasaur" , "Charmander", "Squirtle"]
+// const wrap = pokemon.map(
+//   (p) => {
+//     return `<p> ${p} </p>`
+//   }
+// )
+// console.log(wrap);
+
+const nums = [1,2,3,4,5]
+const squares = nums.map(
+  (x) => x ** 2 
+)
+console.log(squares)
+
+const names = ['alice' , 'bob' , 'charlie' , 'danielle']
+const upper = names.map(
+  (name) => name[0].toUpperCase() + name.slice(1)
+)
+console.log(upper)
+
+const pokemon = ['bulbasaur', 'charmander' , 'squirtle']
+const wrap = pokemon.map(
+  (p) => {
+    return `<p> ${p} </p>`
+  }
+)
+console.log(wrap)
+
 
 export default Entry;
+
