@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  position: relative;
+  background-color: white;
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+}
+.img-container img {
+  height: 80px;
+}
+.main {
+  padding: 30px 30px 10px;
+}
+.add-ingredient-form {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 38px;
+}
+.add-ingredient-form > input {
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+.add-ingredient-form > button {
+  font-family: "Outfit";
+  border-radius: 6px;
+  border: none;
+  background-color: #141413;
+  color: #fafaf8;
+  width: 150px;
+  font-size: 0.875rem;
+
+}
+.add-ingredient-form > button::before{
+  content: "+";
+  margin-right: 5px;
+}
