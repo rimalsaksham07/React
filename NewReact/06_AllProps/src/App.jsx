@@ -7,21 +7,19 @@ import Entry from "./components/Entry";
 import data from "./data";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const map1 = data.map((map) => {
-    return(
+  const entries = data.map((item) => {
+    return (
       <Entry 
-    key = {map.id}
-    img={map.img} 
-    title = {map.title}
-    country = {map.country}
-    />
-    )
-  })  
+        key={item.id}
+        entry={item}
+      />
+    );
+  });
+
   return (
     <>
       <Header />
-      {map1}
+      {entries}
     </>
   );
 }

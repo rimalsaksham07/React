@@ -6,16 +6,16 @@ import Header from './components/Header'
 import Entry from './components/Entry'
 import data from './data'
 
+// map use garera component ma props pass gareko ho esma chai
 function App() {
   const [count, setCount] = useState(0)
   const map1 = data.map(
     (x) => {
       return <Entry
-      img = {x.img}
-      title = {x.title}
-      country = {x.country}
-      name = {x.title}
-
+      key = {x.id}
+      entry = {
+        x
+      }
        />
     }
   )
