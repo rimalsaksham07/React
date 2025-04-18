@@ -13,11 +13,13 @@ function Entry(props) {
       <div className="main">
       <div className="container1">
         <h3>{props.entry.title}</h3>
+        <p>{props.dates}</p>
         <img src="src/assets/location.png" alt="location-logo" height={20} />
         <p className="country">{props.entry.country}</p>
       </div>
-     
+      
       <p className="text">{props.entry.text}</p>
+
     </div>
 
       </div>
