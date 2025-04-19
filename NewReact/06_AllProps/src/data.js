@@ -5,7 +5,7 @@ export default [
             src: "src/assets/abc.jpg",
             alt: "Annapurna Base Camp"
         },
-        title: "Annapurna Base Camp",
+        title: "Annapurna",
         country: "Nepal",
         googleMapsLink: "https://goo.gl/maps/f5U4t92UqU1pTo6L8",
         dates: "12 Jan, 2025 - 24 Jan, 2025",

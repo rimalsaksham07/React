@@ -7,19 +7,14 @@ import Entry from "./components/Entry";
 import data from "./data";
 
 function App() {
-  const entries = data.map((item) => {
-    return (
-      <Entry 
-        key={item.id}
-        entry={item}
-      />
-    );
+  const map1 = data.map((x) => {
+    return <Entry key={x.id} entry={x} />;
   });
 
   return (
     <>
       <Header />
-      {entries}
+      {map1}
     </>
   );
 }
