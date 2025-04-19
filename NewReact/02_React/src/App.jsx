@@ -8,7 +8,7 @@ import data from './data'
 
 // map use garera component ma props pass gareko ho esma chai
 function App() {
-  const [count, setCount] = useState(0)
+
   const map1 = data.map(
     (x) => {
       return <Entry

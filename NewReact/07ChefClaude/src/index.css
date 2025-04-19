@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Condensed+One&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 .img-container {
@@ -19,6 +18,7 @@
 }
 .img-container img {
   height: 80px;
+  cursor: pointer;
 }
 .main {
   padding: 30px 30px 10px;
@@ -47,6 +47,7 @@
   color: #fafaf8;
   width: 150px;
   font-size: 0.875rem;
+  cursor: pointer;
 
 }
 .add-ingredient-form > button::before{
