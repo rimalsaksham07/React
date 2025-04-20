@@ -2,7 +2,10 @@ import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Ternary from './assets/components/Ternary'
+// import Ternary from './assets/components/Ternary'
+// import Practice from './assets/components/Practice'
+// import ComplexState from './assets/components/ComplexState'
+import Stateobject from './components/Stateobject'
 
 function App() {
 
@@ -39,7 +42,10 @@ function App() {
       <button onClick={decrease}>-</button>
       <h1>{value}</h1>
       <button onClick={increase}>+</button> */}
-      <Ternary />
+      {/* <Ternary /> */}
+      {/* <Practice /> */}
+      {/* <ComplexState /> */}
+      <Stateobject />
       
     </>
   )

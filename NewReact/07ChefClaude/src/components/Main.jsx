@@ -1,20 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Main() {
   //   function click(){
   //   console.log("Clicked")
   // }
-  const ingredient = ["Chicken", "Oregano", "Tomatoes"];
-  const map1 = ingredient.map((map, index) => {
-    return <li key={map}>{map}</li>;
+  const [ingredient, setIngredient] = useState([]);
+  const map1 = ingredient.map((map) => {
+    return <li className="list"   key={map}>{map}</li>;
   });
   function submit(event) {
-    event.preventDefault();
-    const formdata = new FormData(event.currentTarget)
-    const newIngredient = formdata.get('ingredient')
-    // console.log(newIngredient)
-    ingredient.push(newIngredient)
-    console.log(ingredient)
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget);
+    const newIngredient = formData.get("ingredient");
+    setIngredient((prevIngredient) => {
+      return [...prevIngredient , newIngredient];
+
+    }) 
   }
   console.log(map1);
   return (
