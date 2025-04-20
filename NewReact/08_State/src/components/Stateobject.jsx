@@ -1,5 +1,5 @@
-import React from "react"
-import avatar from "../assets/user.png"
+import React from "react";
+import avatar from "../assets/user.png";
 import starFilled from "../assets/star-filled.png";
 import starEmpty from "../assets/star-empty.png";
 
@@ -15,11 +15,12 @@ function Stateobject() {
   let starIcon = contact.isFavorite ? starFilled : starEmpty;
 
   function toggleFavorite() {
-    setContact( (prevCount) => {
-      
-      
-    })
-   
+    setContact((prevContact) => {
+      return {
+        ...prevContact,
+        isFavorite: !prevContact.isFavorite,
+      };
+    });
   }
 
   return (
@@ -34,12 +35,14 @@ function Stateobject() {
           <button
             onClick={toggleFavorite}
             aria-pressed={contact.isFavorite}
-            aria-label={false}
+            aria-label={
+              contact.isFavorite ? "Remove from favorites" : "Add to favorites"
+            }
             className="favorite-button"
           >
             <img
-              src={starEmpty}
-              alt="empty star icon"
+              src={starIcon}
+              alt={contact.isFavorite ? "filled star icon" : "empty star icon"}
               className="favorite"
             />
           </button>
@@ -53,5 +56,4 @@ function Stateobject() {
     </main>
   );
 }
-
 export default Stateobject;
