@@ -6,6 +6,8 @@ import './App.css'
 // import Practice from './assets/components/Practice'
 // import ComplexState from './assets/components/ComplexState'
 import Stateobject from './components/Stateobject'
+import Post from './components/PostApp'
+import PostApp from './components/PostApp'
 
 function App() {
 
@@ -45,8 +47,8 @@ function App() {
       {/* <Ternary /> */}
       {/* <Practice /> */}
       {/* <ComplexState /> */}
-      <Stateobject />
-      
+      {/* <Stateobject /> */}
+      <PostApp />
     </>
   )
 }
