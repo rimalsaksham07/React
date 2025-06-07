@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Count count = {count} />
+      <Count count={count} />
       <button onClick={increase}>+</button>
       <button onClick={decrease}>-</button>
     </>
